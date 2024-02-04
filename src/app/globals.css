@@ -2,32 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.story-bg {
+  background: linear-gradient(to bottom, #00000000, #00000070);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  h3 {
+    @apply text-xl sm:text-2xl font-medium
+  }
+  .nav-link {
+    @apply px-2 py-2 rounded-full my-2 2xl:my-0 2xl:px-5 2xl:py-4 2xl:rounded-xl
+  }
+  #navbar img {
+    @apply w-7 h-7 2xl:w-6 2xl:h-6
   }
 }
