@@ -7,7 +7,7 @@ export default function StoryList() {
       <div>
         <h3>Top Stories</h3>
       </div>
-      <div className="overflow-x-hidden">
+      <div className="overflow-x-auto no-scrollbar">
         <div className="flex w-fit mt-7 space-x-9">
           {
             topStoriesList.map((story, index) => {
@@ -45,13 +45,13 @@ export default function StoryList() {
                               }
                               {
                                 story.type === "created" &&
-                                <button className={`bg-[#DAF1FB] text-[#58A4FF] text-base font-semibold rounded-md py-2.5 px-5 outline-none border-none`}>
+                                <button className={`bg-[#DAF1FB] text-[#58A4FF] text-xs sm:text-base font-semibold rounded-md py-1.5 px-3 sm:py-2.5 sm:px-5 outline-none border-none`}>
                                   Created
                                 </button>
                               }
                               {
                                 story.type === "draft" &&
-                                <button className={`bg-[#F4F4F4] text-[#A0A3BD] text-base font-semibold rounded-md py-2.5 px-5 outline-none border-none`}>
+                                <button className={`bg-[#F4F4F4] text-[#A0A3BD] text-xs sm:text-base font-semibold rounded-md py-1.5 px-3 sm:py-2.5 sm:px-5 outline-none border-none`}>
                                   Draft
                                 </button>
                               }

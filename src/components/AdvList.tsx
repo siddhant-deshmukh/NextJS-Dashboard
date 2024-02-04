@@ -7,7 +7,7 @@ export default function AdvList() {
       <div>
         <h3>Top Advertisements</h3>
       </div>
-      <div className="overflow-x-hidden">
+      <div className="overflow-x-auto no-scrollbar">
         <div className="flex space-x-5 w-fit py-10">
           {
             topAdvList.map((adv, index) => {

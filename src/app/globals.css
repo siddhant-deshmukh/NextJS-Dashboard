@@ -10,6 +10,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: linear-gradient(to bottom, #00000000, #00000070);
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
 @layer utilities {
 
