@@ -12,18 +12,21 @@ export default function AdvList() {
           {
             topAdvList.map((adv, index) => {
               return (
-                <div key={index} className="border ml-2 shadow-lg rounded-2xl overflow-hidden w-[500px] h-[212px]">
+                // h-[212px]
+                <div key={index} className="border ml-2 shadow-lg rounded-2xl overflow-hidden  "> 
                   <div className="flex w-fit">
-                    <Image className='flex-nowrap' src={adv.imgSrc} width={226} height={212} alt="" />
-                    <div className="w-[274px] p-5">
-                      <h4 className="text-2xl font-semibold">{adv.name}</h4>
-                      <p className="text-[#A0A3BD]">{adv.desc}</p>
-                      <div className="flex mt-3 justify-between space-x-2">
-                        <button className="bg-[#E8E9FF] rounded-xl text-[#7750F1] font-semibold text-lg leading-none py-4 w-full">
+                    <div className='w-[150px] sm:w-[226px] aspect-[226/212]'>
+                      <Image className='flex-nowrap object-cover' src={adv.imgSrc} width={226}  height={212} alt="" />
+                    </div>
+                    <div className="p-2.5 sm:p-5 w-[200px] sm:w-[274px]">
+                      <h4 className="text-lg sm:text-2xl font-semibold">{adv.name}</h4>
+                      <p className="text-xs sm:text-base text-[#A0A3BD]">{adv.desc}</p>
+                      <div id="visit-footer" className="flex mt-3 justify-between space-x-2">
+                        <button className="bg-[#E8E9FF] rounded-xl text-[#7750F1] font-semibold text-xs sm:text-lg leading-none py-2.5 sm:py-4 w-full">
                           Visit
                         </button>
-                        <button className="aspect-square bg-[#FAFAFA] items-center border flex justify-center rounded-xl w-[70px]">
-                          <Image className="" alt="" src={'/3-dot.svg'} width={20} height={6} />
+                        <button className="aspect-square bg-[#FAFAFA] items-center border flex justify-center rounded-xl w-10 sm:w-[70px]">
+                          <img className="w-5 h-[6px]" alt="" src={'/3-dot.svg'} />
                         </button>
                       </div>
                     </div>

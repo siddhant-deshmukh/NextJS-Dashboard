@@ -12,32 +12,34 @@ export default function StoryList() {
           {
             topStoriesList.map((story, index) => {
               return (
-                <div key={index} className="flex flex-col w-[340px] h-[500px]">
+                <div key={index} className="flex flex-col w-[260px] sm:w-[340px] aspect-[340/500]">
                   <div className="relative rounded-xl">
-                    <Image src={story.imgSrc} alt="" className="-z-10" width={340} height={500} />
-                    <div className="z-10 w-[340px] h-[500px] absolute top-0 left-0">
+                    <Image src={story.imgSrc} alt="" className="-z-10 object-cover" width={340} height={500} />
+                    <div className="z-10 w-[260px] sm:w-[340px] aspect-[340/500] absolute top-0 left-0">
                       <div className="flex flex-col h-full justify-between p-3">
+
                         <div className="flex items-center justify-end space-x-3">
                           <button className="flex bg-[#EDEEED] py-1.5 px-2.5 space-x-1.5 rounded-md items-center">
-                            <Image src={'/eye.svg'} alt="" width={16} height={16} />
+                            <Image className='object-cover' src={'/eye.svg'} alt="" width={16} height={16} />
                             <span className="text-[##9058FF] text-xs">428</span>
                           </button>
                           <button className="flex bg-[#EDEEED] py-1.5 px-2.5 space-x-1.5 rounded-md">
-                            <Image src={'/chart.svg'} alt="" width={16} height={16} />
+                            <Image className='object-cover' src={'/chart.svg'} alt="" width={16} height={16} />
                           </button>
                         </div>
-                        <div className="text-white text-2xl font-semibold" >
+
+                        <div className="text-white text-lg sm:text-2xl font-semibold" >
                           <h1>{story.name}</h1>
                           <div>
                             <div className="flex justify-between items-center mt-3">
-                              <div className="flex space-x-1 text-base font-medium items-center">
+                              <div className="flex space-x-1 text-xs sm:text-base font-medium items-center">
                                 <span className=" font-extrabold">{story.topic}</span>
                                 <span className="w-1 h-1 bg-gray-300 rounded-full" />
                                 <span className="text-[#A0A3BD]">20 Sep 2022</span>
                               </div>
                               {
                                 story.type === "published" &&
-                                <button className={`bg-[#E4FFF8] text-[#0DAD82] text-base font-semibold rounded-md py-2.5 px-5 outline-none border-none`}>
+                                <button className={`bg-[#E4FFF8] text-[#0DAD82] text-xs sm:text-base font-semibold rounded-md py-1.5 px-3 sm:py-2.5 sm:px-5 outline-none border-none`}>
                                   Published
                                 </button>
                               }
@@ -56,10 +58,10 @@ export default function StoryList() {
                             </div>
                           </div>
                           <div className="flex mt-3 justify-between space-x-2">
-                            <button className="bg-[#E8E9FF] rounded-xl text-[#7750F1] font-semibold text-lg leading-none py-4 w-full">
+                            <button className="bg-[#E8E9FF] rounded-xl text-[#7750F1] font-semibold text-sm sm:text-lg leading-none py-2.5 sm:py-4 w-full">
                               View
                             </button>
-                            <button className="aspect-square bg-[#FAFAFA] items-center border flex justify-center rounded-xl w-[70px]">
+                            <button className="bg-[#FAFAFA] items-center border flex justify-center rounded-xl w-[50px] sm:w-[70px]">
                               <Image className="" alt="" src={'/3-dot.svg'} width={20} height={6} />
                             </button>
                           </div>
