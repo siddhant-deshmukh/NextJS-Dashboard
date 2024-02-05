@@ -67,12 +67,14 @@ export default function NavBarModal({ setModalToggle }: {
               <div style={LinkContentStyle} className=''>
                 <img alt='analytics icon' src={'/nav/nav-analytics.svg'} />
                 <span className='block' style={LinkContentTextStyle}>Analytics</span>
+                <span className='alert-b'>3</span>
               </div>
             </Link>
             <Link style={LinkStyles} href={"/"} className='nav-link text-[#53545C] hover:bg-[#E8E9FF]'>
               <div style={LinkContentStyle} className=''>
                 <img alt='media icon' src={'/nav/nav-media.svg'} />
                 <span className='block' style={LinkContentTextStyle}>Media</span>
+                <span className='alert-b'>10</span>
               </div>
             </Link>
             <Link style={LinkStyles} href={"/"} className='nav-link text-[#53545C] hover:bg-[#E8E9FF]'>

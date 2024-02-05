@@ -40,12 +40,14 @@ export default function NavBar() {
             <div style={LinkContentStyle} className=''>
               <img alt='analytics icon' src={'/nav/nav-analytics.svg'} />
               <span className='hidden 2xl:block' style={LinkContentTextStyle}>Analytics</span>
+              <span className='alert'>3</span>
             </div>
           </Link>
           <Link style={LinkStyles} href={"/"} className='nav-link text-[#53545C] hover:bg-[#E8E9FF]'>
             <div style={LinkContentStyle} className=''>
               <img alt='media icon' src={'/nav/nav-media.svg'} />
               <span className='hidden 2xl:block' style={LinkContentTextStyle}>Media</span>
+              <span className='alert'>10</span>
             </div>
           </Link>
           <Link style={LinkStyles} href={"/"} className='nav-link text-[#53545C] hover:bg-[#E8E9FF]'>
