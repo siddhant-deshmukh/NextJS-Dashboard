@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function StoryList() {
@@ -33,9 +34,9 @@ export default function StoryList() {
                           <div>
                             <div className="flex justify-between items-center mt-3">
                               <div className="flex space-x-1 text-xs sm:text-base font-medium items-center">
-                                <span className=" font-extrabold">{story.topic}</span>
+                                <span className=" font-[900]">{story.topic}</span>
                                 <span className="w-1 h-1 bg-gray-300 rounded-full" />
-                                <span className="text-[#A0A3BD]">20 Sep 2022</span>
+                                <span className="text-[#A0A3BD] font-bold">20 Sep 2022</span>
                               </div>
                               {
                                 story.type === "published" &&
@@ -58,9 +59,9 @@ export default function StoryList() {
                             </div>
                           </div>
                           <div className="flex mt-3 justify-between space-x-2">
-                            <button className="bg-[#E8E9FF] rounded-xl text-[#7750F1] font-semibold text-sm sm:text-lg leading-none py-2.5 sm:py-4 w-full">
+                            <Link href={`story/${index+1}`} className="text-center bg-[#E8E9FF] rounded-xl text-[#7750F1] font-semibold text-sm sm:text-lg leading-none py-2.5 sm:py-4 w-full">
                               View
-                            </button>
+                            </Link>
                             <button className="bg-[#FAFAFA] items-center border flex justify-center rounded-xl w-[50px] sm:w-[70px]">
                               <Image className="" alt="" src={'/3-dot.svg'} width={20} height={6} />
                             </button>

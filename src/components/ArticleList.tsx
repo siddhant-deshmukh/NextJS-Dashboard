@@ -12,26 +12,26 @@ export default function ArticleList() {
           {
             topArticleList.map((article, index) => {
               return (
-                <div key={index} className="flex flex-col relative rounded-xl border bg-white p-0 sm:p-3 w-[320px] sm:w-[472px]">
+                <div key={index} className="flex text-[#A0A3BD] flex-col relative rounded-xl border bg-white p-0 sm:p-3 w-[320px] sm:w-[472px]">
                   <Image className="rounded-none sm:rounded-xl" src={article.imgSrc} alt="" width={448} height={228} />
                   {/* Topic, Date, author */}
                   <div className='p-3 sm:p-0'>
                     <div className="flex justify-between items-center mt-3">
                       <div className="flex space-x-2 text-xs sm:text-sm font-medium items-center">
-                        <span className="text-[#9058FF] font-bold">{article.topic}</span>
-                        <span className="w-1.5 h-1.5 bg-gray-300 rounded-full" />
-                        <span className="text-gray-400">{article.date}</span>
+                        <span className="text-[#9058FF] font-extrabold">{article.topic}</span>
+                        <span className="w-1.5 h-1.5 bg-[#D9D9D9] rounded-full" />
+                        <span className="font-semibold">{article.date}</span>
                       </div>
                       <div className="flex space-x-2 items-center">
                         <div className='w-[20px] sm:w-[30px] aspect-square'>
                           <Image alt="avatar" className='object-cover' src={'/dp-avatar.jpg'} width={30} height={30} />
                         </div>
-                        <span className="text-xs leading-none sm:text-sm font-bold">Maria Doe</span>
+                        <span className="text-xs leading-none sm:text-base text-black font-semibold">Maria Doe</span>
                       </div>
                     </div>
                     {/* Title */}
                     <div className="flex justify-between items-center mt-3">
-                      <h1 className='inline-block sm:block text-[#22285E] text-[18px] sm:text-[22px] font-semibold'>
+                      <h1 className='inline-block sm:block text-[#22285E] text-[18px] sm:text-[24px] font-semibold'>
                         {article.title}
                       </h1>
                       {
@@ -52,11 +52,11 @@ export default function ArticleList() {
                       }
                     </div>
                     {/* Description */}
-                    <div className="text-[#A0A3BD] mt-0">
+                    <div className=" mt-0">
                       {article.desc}
                     </div>
                     {/* Tags */}
-                    <div className="flex space-x-3 mt-2 text-base leading-none font-semibold text-[#A0A3BD]">
+                    <div className="flex space-x-3 mt-2 text-base leading-none font-semibold ">
                       {
                         article.tags.map((text, index) => {
                           return <span key={index} className="text-xs py-1.5 px-2.5 sm:text-base sm:py-3 sm:px-4 border  bg-[#F8FAFB]">

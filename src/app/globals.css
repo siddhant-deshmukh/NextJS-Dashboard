@@ -17,10 +17,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @layer utilities {
 
   h3 {
-    @apply text-xl sm:text-2xl font-medium
+    @apply text-xl sm:text-2xl font-semibold
   }
   .nav-link {
-    @apply px-2 py-2 rounded-full my-2 2xl:my-0 2xl:px-5 2xl:py-4 2xl:rounded-xl
+    @apply px-2 py-2 rounded-full my-2 2xl:my-0 2xl:px-5 2xl:py-4 2xl:rounded-xl 
   }
   #navbar img {
     @apply w-7 h-7 2xl:w-6 2xl:h-6
