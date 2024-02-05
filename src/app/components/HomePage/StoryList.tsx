@@ -10,11 +10,11 @@ export default function StoryList() {
         <button>See all</button>
       </div>
       <div className="overflow-x-auto no-scrollbar">
-        <div className="flex w-fit mt-7 space-x-9">
+        <div className="flex w-fit mt-4 py-3 pl-3 space-x-9">
           {
             topStoriesList.map((story, index) => {
               return (
-                <div key={index} className="flex flex-col w-[260px] sm:w-[340px] aspect-[340/500]">
+                <div key={index} className="flex flex-col w-[260px] sm:w-[340px] aspect-[340/500] transition-all duration-200 scale-100 hover:scale-105">
                   <div className="relative rounded-xl">
                     <Image src={story.imgSrc} alt="" className="-z-10 object-cover" width={340} height={500} />
                     <div className="z-10 w-[260px] sm:w-[340px] aspect-[340/500] absolute top-0 left-0">

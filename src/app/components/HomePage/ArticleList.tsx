@@ -9,11 +9,11 @@ export default function ArticleList() {
         <button>See all</button>
       </div>
       <div className="overflow-x-auto no-scrollbar">
-        <div className="flex mt-7 space-x-2.5 sm:space-x-4 lg:space-x-9">
+        <div className="flex mt-4 py-3 pl-3 space-x-2.5 sm:space-x-4 lg:space-x-9">
           {
             topArticleList.map((article, index) => {
               return (
-                <div key={index} className="flex text-[#A0A3BD] flex-col relative rounded-xl border bg-white p-0 sm:p-3 w-[320px] sm:w-[472px]">
+                <div key={index} className="flex text-[#A0A3BD] flex-col relative rounded-xl border bg-white p-0 sm:p-3 w-[320px] sm:w-[472px] transition-all duration-200 scale-100 hover:scale-105">
                   <Image className="rounded-none sm:rounded-xl" src={article.imgSrc} alt="" width={448} height={228} />
                   {/* Topic, Date, author */}
                   <div className='p-3 sm:p-0'>
@@ -68,7 +68,7 @@ export default function ArticleList() {
                     </div>
                     {/* Footer btns */}
                     <div className="flex mt-3 justify-between space-x-5">
-                      <button className="bg-[#E8E9FF] rounded-xl text-[#7750F1] font-semibold text-xs sm:text-lg py-2.5 sm:py-4 w-[360px]">
+                      <button className="bg-[#E8E9FF] hover:bg-violet-200 rounded-xl text-[#7750F1]  font-semibold text-xs sm:text-lg py-2.5 sm:py-4 w-[360px]">
                         View
                       </button>
                       <button className="bg-[#FAFAFA] items-center border flex justify-center rounded-xl w-[60px]">
