@@ -3,8 +3,9 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Calender from './Calender'
-import { NavBarModal } from './NavBar'
+
 import Link from 'next/link'
+import NavBarModal from './NarBarModal'
 
 export default function TopBar({ title }: {
   title?: string

@@ -5,8 +5,9 @@ import React from 'react'
 export default function StoryList() {
   return (
     <>
-      <div>
+      <div className='section-heading'>
         <h3>Top Stories</h3>
+        <button>See all</button>
       </div>
       <div className="overflow-x-auto no-scrollbar">
         <div className="flex w-fit mt-7 space-x-9">

@@ -4,8 +4,9 @@ import React from 'react'
 export default function ArticleList() {
   return (
     <>
-      <div>
+      <div className='section-heading'>
         <h3>Top Articles</h3>
+        <button>See all</button>
       </div>
       <div className="overflow-x-auto no-scrollbar">
         <div className="flex mt-7 space-x-2.5 sm:space-x-4 lg:space-x-9">

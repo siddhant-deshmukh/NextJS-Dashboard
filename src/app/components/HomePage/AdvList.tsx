@@ -4,8 +4,9 @@ import React from 'react'
 export default function AdvList() {
   return (
     <>
-      <div>
-        <h3>Top Advertisements</h3>
+      <div className='section-heading'>
+        <h3>Advertisment</h3>
+        <button>See all</button>
       </div>
       <div className="overflow-x-auto no-scrollbar">
         <div className="flex space-x-5 w-fit py-10">

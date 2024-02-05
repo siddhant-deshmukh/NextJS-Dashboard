@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TopBar from "@/components/TopBar";
+import TopBar from "@/app/components/TopBar";
 
 export default function Page({ params }: {
   params: { id: string }
